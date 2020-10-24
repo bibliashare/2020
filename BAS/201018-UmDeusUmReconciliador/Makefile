@@ -24,5 +24,5 @@ ${PREF}.pdf: ${PREF}.tex \
 ${PREF}.png: ${PREF}.pdf
 	mkdir -p ${PREF}.png
 	cd ${PREF}.png; \
-		pdftoppm -png -forcenum -r 200 "../${PRES}.pdf" "${PRES}"
+		pdftoppm -png -forcenum -r 200 "../${PREF}.pdf" "${PREF}"
 
