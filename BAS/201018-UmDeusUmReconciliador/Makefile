@@ -21,8 +21,8 @@ ${PREF}.pdf: ${PREF}.tex \
 		res/logo/BibliaShare.pdf
 	pdflatex ${PREF}.tex
 
-${PRES}.png: ${PRES}.pdf
-	mkdir -p ${PRES}.png
-	cd ${PRES}.png; \
+${PREF}.png: ${PREF}.pdf
+	mkdir -p ${PREF}.png
+	cd ${PREF}.png; \
 		pdftoppm -png -forcenum -r 200 "../${PRES}.pdf" "${PRES}"
 
