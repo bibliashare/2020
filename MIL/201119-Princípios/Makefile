@@ -29,6 +29,6 @@ ${PREF}.png: ${PREF}.pdf
 201125-Fundamentos.pdf: ${PREF}.pdf
 	pdftk \
 		A=$< \
-		cat 1,10-12,21-39 \
+		cat A1 A10-12 A21-39 \
 		output $@
 
