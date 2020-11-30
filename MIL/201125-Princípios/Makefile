@@ -26,9 +26,3 @@ ${PREF}.png: ${PREF}.pdf
 	cd ${PREF}.png; \
 		pdftoppm -png -forcenum -r 304.76 "../${PREF}.pdf" "${PREF}"
 
-201125-Fundamentos.pdf: ${PREF}.pdf
-	pdftk \
-		A=$< \
-		cat A1 A10-12 A21-39 \
-		output $@
-
